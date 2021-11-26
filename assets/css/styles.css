@@ -492,3 +492,44 @@ body.dark-theme{
 .cards .mid-cards{
   padding: 180px 0 0 0 !important;
 }
+
+/* Sticky */
+
+.sticky {
+  padding: 3em;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+}
+.sticky blockquote:nth-of-type(1) {
+  width: 55%;
+  left: 15%;
+  top: -10%;
+  font-size: 100px;
+  margin-top: 17%;
+  position: absolute;
+  text-transform: uppercase;
+}
+.sticky blockquote:nth-of-type(2) {
+  text-transform: uppercase;
+  font-size: 67px;
+  width: 54%;
+  left: 15%;
+  margin-top: 17%;
+  position: absolute;
+}
+.sticky blockquote:nth-of-type(3) {
+  text-transform: uppercase;
+  font-size: 73px;
+  width: 50%;
+  top: 17%;
+  left: 15%;
+  margin-top: 17%;
+  position: absolute;
+}
+.sticky img {
+  position: absolute;
+  width: 60%;
+  right: 0%;
+  top: 15%;
+}

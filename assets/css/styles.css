@@ -214,7 +214,7 @@ body {
 }
 .home__title {
   /* font-size: var(--h1-font-size); */
-  font-size: 10vw;
+  font-size: 5vw;
   font-family: cinzelbold;
   color: var(--primary-color);
   text-align: center;
@@ -226,8 +226,7 @@ body {
 
 .home__subtitle {
   /* font-size: var(--h3-font-size); */
-  margin-top: -10%;
-  font-size: 7vw;
+  font-size: 3vw;
   color: var(--title-color);
   text-align: right;
   margin-right: 20%;

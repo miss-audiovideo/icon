@@ -466,3 +466,29 @@ body.dark-theme{
   color: var(--text-color-light);
   margin-top: 3.5rem;
 }
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.cards img{
+  height: 175px;
+  width: 175px;
+  border-radius: 12px;
+}
+.three-cards{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.two-cards{
+  margin: auto 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cards .mid-cards{
+  padding: 180px 0 0 0 !important;
+}

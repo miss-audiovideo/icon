@@ -1,6 +1,25 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
-
+@font-face {
+  font-family: futuramedium;
+  src: url("../fonts/Futura-Medium.ttf");
+}
+@font-face {
+  font-family: futurabook;
+  src: url("../fonts/Futura-Book.ttf");
+}
+@font-face {
+  font-family: futurameditalic;
+  src: url("../fonts/Futura-Medium-Italic.ttf");
+}
+@font-face {
+  font-family: cinzelbold;
+  src: url("../fonts/Cinzel-Bold.ttf");
+}
+@font-face {
+  font-family: cinzeldecorativebold;
+  src: url("../fonts/CinzelDecorative-Bold.ttf");
+}
 /*========== BASE CSS Styles ==========*/
 *,::before,::after{
   box-sizing: border-box;
@@ -24,7 +43,7 @@ a{
 }
 
 img{
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -479,8 +498,8 @@ body.dark-theme{
   gap: 1rem;
 }
 .cards img {
-  height: 175px;
-  width: 175px;
+  height: 200px;
+  width: 200px;
   border-radius: 12px;
 }
 .three-cards {
@@ -499,46 +518,7 @@ body.dark-theme{
   padding: 180px 0 0 0 !important;
 }
 
-/* Sticky */
 
-.sticky {
-  padding: 3em;
-  height: 100vh;
-  position: relative;
-  box-sizing: border-box;
-}
-.sticky blockquote:nth-of-type(1) {
-  width: 55%;
-  left: 15%;
-  top: -10%;
-  font-size: 100px;
-  margin-top: 17%;
-  position: absolute;
-  text-transform: uppercase;
-}
-.sticky blockquote:nth-of-type(2) {
-  text-transform: uppercase;
-  font-size: 67px;
-  width: 54%;
-  left: 15%;
-  margin-top: 17%;
-  position: absolute;
-}
-.sticky blockquote:nth-of-type(3) {
-  text-transform: uppercase;
-  font-size: 73px;
-  width: 50%;
-  top: 17%;
-  left: 15%;
-  margin-top: 17%;
-  position: absolute;
-}
-.sticky img {
-  position: absolute;
-  width: 60%;
-  right: 0%;
-  top: 15%;
-}
 /* 360 */
 
 .three-sixty-section {
@@ -633,7 +613,7 @@ body.dark-theme{
   font-size: 2.5vw;
   text-transform: uppercase;
   margin: 0 auto;
-  /* font-family: futuramedium; */
+  font-family: futuramedium;
 }
 .iconcard{
   display: grid;
@@ -649,7 +629,7 @@ body.dark-theme{
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .iconcard .icon-block{
-  /* font-family: futuramedium; */
+  font-family: futurabook;
   padding: 10% 8% 10% 10%;
   border-right:2px solid rgba(255, 255, 255, 0.125);
 }
@@ -768,4 +748,103 @@ body.dark-theme{
     border-radius: 5px;
     margin: 5px 10px;
   }
+}
+/* Heading */
+.robo-set-1 {
+  height: 30vw;
+  position: relative;
+}
+.robo {
+  position: absolute;
+    top: 18vw;
+    right: 28vw;
+    width: 70vw;
+    height: auto;
+  transform: scaleX(-1) translate(-50%, -50%);
+}
+.luxury-heading {
+  text-align: center;
+}
+.luxury {
+  font-size: 12vw;
+  font-family: "cinzeldecorativebold";
+  text-shadow: 0px 0px 13px #eaeaf025;
+  color: #eaeaf0 !important;
+}
+.luxury span {
+  font-size: 3vw;
+  font-family: "herculesitalic";
+  color: #eaeaf0 !important;
+}
+.design {
+  position: absolute;
+  margin: 0vw 0vw 0vw 19.5vw;
+  bottom: 3vw;
+  font-size: 10vw;
+  font-family: "cinzelbold";
+  text-shadow: 0px 0px 13px #ffc85725;
+  color: #ffc857 !important;
+}
+@media (max-width: 500px) {
+  .robo-set-1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+/* Main Cards */
+@media (max-width: 1120px) {
+  
+  
+}
+
+/* MidHeading Sticky */
+.robo-set-2 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 10% 10%;
+  height: 40vw;
+  position: relative;
+}
+.robo2 {
+  position: absolute;
+  right: 15vw;
+  width: 28vw;
+  height: auto;
+}
+.sticky {
+  padding: 3rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.sticky blockquote:nth-of-type(1) {
+  top: 7rem;
+  font-family: "futuramedium";
+    text-transform: uppercase;
+    color: #ffc857 !important;
+    padding: 0vw 8vw 8vw 4vw;
+    font-size: 100px;
+    position: absolute;
+    text-transform: uppercase;
+}
+.sticky blockquote:nth-of-type(2) {
+  content: attr(data-text);
+  top: 13.5rem;
+    font-family: "futuramedium";
+    text-transform: uppercase;
+    padding: 0vw 8vw 8vw 4vw;
+    position: absolute;
+    color: #fff;
+    overflow: hidden;
+    animation: type 10s linear infinite;
+    font-size: 67px;
+    position: absolute;
+}
+.sticky blockquote:nth-of-type(3) {
+  font-family: "futuramedium";
+    text-transform: uppercase;
+    color: #ffc857 !important;
+    top: 16rem;
+    padding: 0vw 8vw 8vw 4vw;
+    font-size: 73px;
+    position: absolute;
 }

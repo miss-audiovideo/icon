@@ -68,12 +68,6 @@
     margin-right: auto;
   }
 
-    /********************* End Of Part 1************************************/
-
-    .home__img{
-      width: 500px;
-    }
-
     /********************************** End Of Part 2 **************************************/
 
     .about__container,
@@ -99,6 +93,7 @@
     .contact__container, .contact__initial
     {
       text-align: initial;
+      justify-items: center;
     }
 
     .about__img{

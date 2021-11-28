@@ -89,7 +89,7 @@
     .home__container,
     .about__container,
     .app__container {
-      grid-template-columns: repeat(2,1fr);
+      /* grid-template-columns: repeat(2,1fr); */
       align-items: center;
     }
     /********************************** End Of Part 2 **************************************/

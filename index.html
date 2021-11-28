@@ -48,10 +48,10 @@
                 <div class="home__data">
                     <div class="robo-set-1">
                         <div class="luxury-heading">
-                            <div data-aos="fade-left" class="luxury home__title">
+                            <div class="luxury home__title">
                                 Luxury<span>of</span>
                             </div>
-                            <div data-aos="fade-right" class="design home__title">
+                            <div class="design home__title">
                                 Design
                             </div>
                         </div>
@@ -156,36 +156,53 @@
             </div>
         </section>
 
-        <!--========== SERVICES ==========-->
-        <section class="section bd-container" id="services">
-            <div class="services__content">
-                <div class="dash-container">
-                    <div class="dash-top">
-                        <img class="dash-img" src="assets/img/dashboard.png" alt="" />
-                    </div>
-                    <div class="dash-bottom">
-                        <div class="dash-buttons">
-                            <button class="One services__content">
-                                DISCOVER
-                            </button>
-                            <button class="Two services__content">
-                                STRATEZIZE
-                            </button>
-                            <button class="Three services__content">
-                                CREATE
-                            </button>
-                            <button class="Four services__content">
-                                FEEDBACK
-                            </button>
-                            <button class="Five services__content">
-                                GROWTH
-                            </button>
-                        </div>
-                    </div>
+        <!--===== Gallery =======-->
+        <section>
+            <div class="slider cards__img">
+                <div class="slide-track">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+            </div>
+            <div class="slider cards__img">
+                <div class="slide-track1">
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
+                    <div class="slide2"></div>
                 </div>
             </div>
         </section>
-
         <!--===== Quality =======-->
         <section class="section bd-container">
             <div class="designTwo">
@@ -199,7 +216,7 @@
         <!--========== ICON ==========-->
         <section class="section bd-container" id="icon">
             <div class="icon-section">
-                <div class="icon-title app__data">
+                <div class="icon-title">
                     <h1>The Icon Advantage</h1>
                 </div>
                 <div class="iconcard">
@@ -237,97 +254,79 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
         </section>
-        <!--========== ABOUT ==========-->
 
-
-
-
-
-
-        <!--========== CONTACT US ==========-->
-        <section class="contact section bd-container" id="contact">
-            <div class="contact__data">
-                <div class="faq">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="faq-title contact__data">
-                                    <h1>FAQ</h1>
+        <!--========== FAQ ==========-->
+        <section class="section bd-container" id="faq">
+            <div class="faq">
+                <div class="container">
+                    <div class="faq-title services__content">
+                        <h1>FAQ</h1>
+                    </div>
+                    <div class="faq-content">
+                        <div class="panel-group services__content" id="accordion1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">
+                                        What is the difference between a website and a website template?
+                                    </h2>
+                                    <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1">+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapse1" class="panel-collapse in">
+                                <div class="panel-body">
+                                    <div class="panel-body-head">
+                                        <h5>Pricing</h5>
+                                        <hr />
+                                    </div>
+                                    <p>A website template is a pre-made website that you can use to create
+                                        your own website. <span>A website is a collection of web pages that
+                                            are linked together.</span></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="faq-content">
-                                    <div class="panel-group contact__data" data-aos="fade-up" id="accordion1">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <div>
-                                                        {faqs[0].question}
-                                                    </div>
-                                                </h4>
-                                                <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1">+
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="collapse1" class="panel-collapse collapse in">
-                                            <div class="panel-body">
-                                                <div class="panel-body-head">
-                                                    <h5>{faqs[0].subtitle}</h5>
-                                                    <hr />
-                                                </div>
-                                                <p>{faqs[0].answer}</p>
-                                            </div>
-                                        </div>
+                        <div class="panel-group contact__data" id="accordion2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">
+                                        What is the difference between a website and a website template?
+                                    </h2>
+                                    <div data-toggle="#collapse2" data-id="2" data-parent="#accordion2">+
                                     </div>
-                                    <div class="panel-group contact__data" data-aos="fade-up" id="accordion1">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <div>
-                                                        {faqs[1].question}
-                                                    </div>
-                                                </h4>
-                                                <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1">+
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="collapse1" class="panel-collapse collapse in">
-                                            <div class="panel-body">
-                                                <div class="panel-body-head">
-                                                    <h5>{faqs[1].subtitle}</h5>
-                                                    <hr />
-                                                </div>
-                                                <p>{faqs[1].answer}</p>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="panel-body-head">
+                                        <h5>Pricing</h5>
+                                        <hr />
                                     </div>
-                                    <div class="panel-group contact__data" data-aos="fade-up" id="accordion1">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <div>
-                                                        {faqs[2].question}
-                                                    </div>
-                                                </h4>
-                                                <div data-toggle="#collapse1" data-id="1" data-parent="#accordion1">+
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="collapse1" class="panel-collapse in collapse">
-                                            <div class="panel-body">
-                                                <div class="panel-body-head">
-                                                    <h5>{faqs[2].subtitle}</h5>
-                                                    <hr />
-                                                </div>
-                                                <p>{faqs[2].answer}</p>
-                                            </div>
-                                        </div>
+                                    <p>A website template is a pre-made website that you can use to create
+                                        your own website. <span>A website is a collection of web pages that
+                                            are linked together.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group contact__data" id="accordion3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">
+                                        What is the difference between a website and a website template?
+                                    </h2>
+                                    <div data-toggle="#collapse3" data-id="3" data-parent="#accordion3">+
                                     </div>
+                                </div>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="panel-body-head">
+                                        <h5>Pricing</h5>
+                                        <hr />
+                                    </div>
+                                    <p>A website template is a pre-made website that you can use to create
+                                        your own website. <span>A website is a collection of web pages that
+                                            are linked together.</span></p>
                                 </div>
                             </div>
                         </div>
@@ -335,8 +334,379 @@
                 </div>
             </div>
         </section>
-        <!--========== CONTACT US ==========-->
 
+        <!--========== TESTIMONIALS ==========-->
+        <section>
+            <div data-aos="fade-in" class="testimonials-new">
+                <h1>See What Our clinets have to say about us</h1>
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <p>
+                                lemony is a very good website. I have used it for my
+                                business. I am very happy with the service.
+                            </p>
+                            <h3>Paul Jansen</h3>
+                            <div class="test-work">
+                                <h6>CEO</h6><span>|</span>
+                                <h5>Zolt energy drink</h5>
+                            </div>
+                            <div class="test-stars"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="clinet-img">
+                                <img src={imgOne} alt="user" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== FOOTER ==========-->
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
                 <div class="footer__content">

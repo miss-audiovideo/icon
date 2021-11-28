@@ -90,7 +90,7 @@
 
     .about__data, .about__initial,
     .app__data, .app__initial,
-    .contact__container, .contact__initial
+    .contact__container, .contact__initial, .cards__img
     {
       text-align: initial;
       justify-items: center;

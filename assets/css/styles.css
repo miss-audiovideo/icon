@@ -100,7 +100,7 @@ body {
   /* background-color: var(--body-color); */
   background: url("../img/leaf.gif");
   background-size: 100% auto;
-  background-repeat: round;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
   color: var(--text-color);
@@ -108,19 +108,14 @@ body {
 }
 
 /*========== LAYOUT ==========*/
-.bd-container {
-  /* max-width: 960px; */
-  width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
-}
+
 
 .l-header {
   width: 100%;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+ 
 }
 
 /*========== NAV ==========*/
@@ -130,7 +125,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: transparent; */
+ background: transparent; 
 }
 
 @media screen and (max-width: 768px) {

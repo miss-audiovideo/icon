@@ -534,6 +534,7 @@ body.dark-theme {
   box-shadow: 0px 0px 10px #00000050, 0px 0px 20px #00000050;
   height: auto;
 }
+
 .btn-icon {
   position: absolute;
   top: 75%;
@@ -547,6 +548,12 @@ body.dark-theme {
   background-color: #2b0505;
   font-size: 2.5vw;
   box-shadow: 0 0 5px #ffffff20, 0 0 10px #ffffff20;
+}
+.btn-icon .fa{
+  position: absolute;
+    top: 50%;
+    transform: inherit;
+    left: 50%;
 }
 .btn-icon:hover {
   background-color: #ffe462;

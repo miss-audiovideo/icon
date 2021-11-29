@@ -97,7 +97,12 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  background: url("../img/leaf.gif");
+  background-size: 100% auto;
+  background-repeat: round;
+  background-attachment: fixed;
+
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -125,6 +130,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background: transparent; */
 }
 
 @media screen and (max-width: 768px) {
@@ -549,11 +555,11 @@ body.dark-theme {
   font-size: 2.5vw;
   box-shadow: 0 0 5px #ffffff20, 0 0 10px #ffffff20;
 }
-.btn-icon .fa{
+.btn-icon .fa {
   position: absolute;
-    top: 50%;
-    transform: inherit;
-    left: 50%;
+  top: 50%;
+  transform: inherit;
+  left: 50%;
 }
 .btn-icon:hover {
   background-color: #ffe462;
@@ -1083,7 +1089,7 @@ body.dark-theme {
 }
 .slide:nth-child(1),
 .slide:nth-child(10) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/can.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1091,7 +1097,7 @@ body.dark-theme {
 }
 .slide:nth-child(2),
 .slide:nth-child(11) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/chinese.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1099,7 +1105,7 @@ body.dark-theme {
 }
 .slide:nth-child(3),
 .slide:nth-child(12) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/drinks.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1107,7 +1113,7 @@ body.dark-theme {
 }
 .slide:nth-child(4),
 .slide:nth-child(13) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/wonder.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1115,7 +1121,7 @@ body.dark-theme {
 }
 .slide:nth-child(5),
 .slide:nth-child(14) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/uniqe2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1123,7 +1129,7 @@ body.dark-theme {
 }
 .slide:nth-child(6),
 .slide:nth-child(15) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/uniqe.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1131,7 +1137,7 @@ body.dark-theme {
 }
 .slide:nth-child(7),
 .slide:nth-child(16) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/watch.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1139,7 +1145,7 @@ body.dark-theme {
 }
 .slide:nth-child(8),
 .slide:nth-child(17) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/girl.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1147,7 +1153,7 @@ body.dark-theme {
 }
 .slide:nth-child(9),
 .slide:nth-child(18) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/drinks.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1164,7 +1170,7 @@ body.dark-theme {
 }
 .slide2:nth-child(1),
 .slide2:nth-child(10) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/drinks.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1172,7 +1178,7 @@ body.dark-theme {
 }
 .slide2:nth-child(2),
 .slide2:nth-child(11) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/uniqe.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1180,7 +1186,7 @@ body.dark-theme {
 }
 .slide2:nth-child(3),
 .slide2:nth-child(12) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/watch.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1188,7 +1194,7 @@ body.dark-theme {
 }
 .slide2:nth-child(4),
 .slide2:nth-child(13) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/wonder.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1196,7 +1202,7 @@ body.dark-theme {
 }
 .slide2:nth-child(5),
 .slide2:nth-child(14) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/chinese.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1204,7 +1210,7 @@ body.dark-theme {
 }
 .slide2:nth-child(6),
 .slide2:nth-child(15) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/can.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1212,7 +1218,7 @@ body.dark-theme {
 }
 .slide2:nth-child(7),
 .slide2:nth-child(16) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/uniqe.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1220,7 +1226,7 @@ body.dark-theme {
 }
 .slide2:nth-child(8),
 .slide2:nth-child(17) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/wonder.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1228,7 +1234,7 @@ body.dark-theme {
 }
 .slide2:nth-child(9),
 .slide2:nth-child(18) {
-  background: url("../img/main/1.jpg");
+  background: url("../img/watch.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

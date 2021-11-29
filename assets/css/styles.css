@@ -534,26 +534,14 @@ body.dark-theme {
   box-shadow: 0px 0px 10px #00000050, 0px 0px 20px #00000050;
   height: auto;
 }
-.three-sixty-overlay {
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65%;
-  height: 75%;
-}
-.three-sixty-section .three-sixty-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .btn-icon {
   position: absolute;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
   color: #ffe462;
   border: none;
   background-color: #2b0505;
@@ -567,7 +555,8 @@ body.dark-theme {
 .btn-name {
   padding: 0.6vw;
 }
-.popup-text {
+.three-sixty-popup-text-inner {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -614,9 +603,9 @@ body.dark-theme {
 }
 .icon-title h1 {
   text-align: center;
-    font-size: 2.5vw;
-    text-transform: uppercase;
-    font-family: futuramedium;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-family: futuramedium;
 }
 .iconcard {
   display: grid;
@@ -893,7 +882,8 @@ body.dark-theme {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0px 0px 5px #ffc85725, 0px 0px 10px #ffc85725, 0px 0px 15px #ffc85725;
+  text-shadow: 0px 0px 5px #ffc85725, 0px 0px 10px #ffc85725,
+    0px 0px 15px #ffc85725;
   color: #ffc857;
   font-family: futuramedium;
   font-weight: 500;
@@ -1269,11 +1259,11 @@ body.dark-theme {
   margin-right: 10px;
   border-radius: 20px 20px 20px 20px;
 }
-.testimonials-new{
+.testimonials-new {
   padding: 12% 0;
   position: relative;
 }
-.testimonials-new h1{
+.testimonials-new h1 {
   color: #ffc857;
   display: flex;
   letter-spacing: 1px;
@@ -1300,39 +1290,39 @@ body.dark-theme {
   background-size: cover;
   background-origin: border-box;
 }
-.test-card p{
+.test-card p {
   color: #fff;
-  font-size: .8em;
+  font-size: 0.8em;
   font-family: futurabook;
   font-weight: 200;
   padding: 5% 10% 0 10%;
 }
-.test-card h3{
+.test-card h3 {
   color: #ffe462;
   padding: 0 10% 0 10%;
   font-size: 1.2em;
   font-family: futuramedium;
 }
-.test-card .test-work{
+.test-card .test-work {
   display: flex;
 }
-.test-card .test-work h6{
+.test-card .test-work h6 {
   color: #fff;
-  font-size: .6em;
+  font-size: 0.6em;
   padding: 0 5px 0 10%;
   font-family: futurabook;
 }
-.test-card .test-work span{
+.test-card .test-work span {
   position: absolute;
   left: 20.5%;
   bottom: 30%;
-  font-size: .6em;
+  font-size: 0.6em;
   color: #fff;
   font-family: futurabook;
 }
-.test-card .test-work h5{
+.test-card .test-work h5 {
   color: #ffe462;
-  font-size: .6em;
+  font-size: 0.6em;
   padding: 0 10% 0 5px;
   font-family: futurabook;
 }
@@ -1341,10 +1331,10 @@ body.dark-theme {
   font-size: 1em;
   padding: 0 10%;
 }
-.test-card .test-stars i{
+.test-card .test-stars i {
   padding: 0 0 0 5px;
 }
-.clinet-img{
+.clinet-img {
   position: absolute;
   right: -5px;
   bottom: -30px;
@@ -1356,7 +1346,7 @@ body.dark-theme {
   background-color: rgba(114, 114, 114, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
-.clinet-img img{
+.clinet-img img {
   position: absolute;
   bottom: 6px;
   right: 6px;
@@ -1365,8 +1355,8 @@ body.dark-theme {
   border-radius: 50px;
 }
 /* Footer */
-.footer{
-  font-family:futuramedium;
+.footer {
+  font-family: futuramedium;
 }
 .copy-social-container {
   background-color: #191919;
@@ -1377,7 +1367,7 @@ body.dark-theme {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  }
+}
 .text-end {
   display: flex;
   align-items: center;
@@ -1436,6 +1426,6 @@ body.dark-theme {
   }
 }
 /* quote */
-.quote{
+.quote {
   text-align: center;
 }

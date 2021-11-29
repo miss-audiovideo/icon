@@ -107,3 +107,28 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+const tsText1 = document.getElementById('ts-Text-1')
+const video1 = document.querySelector('#video-1')
+const btn1 = document.querySelector('#btn-1')
+const tsText2 = document.getElementById('ts-Text-2')
+const video2 = document.querySelector('#video-2')
+const btn2 = document.querySelector('#btn-2')
+
+btn1.addEventListener('mouseenter', () => {
+    video1.pause()
+    tsText1.style.display = 'block'
+})
+btn1.addEventListener('mouseout', () => {
+    video1.play()
+    tsText1.style.display = 'none'
+})
+btn2.addEventListener('mouseenter', () => {
+    video2.pause()
+    tsText2.style.display = 'block'
+})   
+btn2.addEventListener('mouseout', () => {
+    video2.play()
+    tsText2.style.display = 'none'
+})
+

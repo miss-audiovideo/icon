@@ -794,7 +794,7 @@ select.form-field {
 }
 .grid-2x2 {
   display: grid;
-  gap: 1rem;
+  gap: 10rem 1rem;
   grid-template-columns: 1fr 1fr;
 }
 

@@ -94,7 +94,6 @@ img {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
   background: url("../img/leaf.gif");
@@ -125,21 +124,7 @@ body {
   background: transparent;
 }
 
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 1.5rem 0 1rem;
-    text-align: center;
 
-    transition: 0.4s;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 1rem 1rem;
-    z-index: var(--z-fixed);
-  }
-}
 
 .nav__item {
   margin-bottom: var(--mb-2);

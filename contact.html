@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Responsive Apps Website</title>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo"><img src="assets/img/ICONMEDIA.gif"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Get In Touch</a></li>
+                    <!-- dont remove change-theme li -->
+                    <li><i class='change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <!--========== CONTACT ==========-->
+        <section class="bd-container" id="contact">
+            <div class="contact-section">
+                <div class="split">
+                    <div class="contact-heading">
+                        <h2 class="text-capitalize display-2 w-50 contact-alng headingContent2">
+                            LET'S CREATE EXPERIENCES!
+                        </h2>
+                        <form id="email-form" class="alng" onSubmit="">
+                            <input type="email" id="email" size="50" value="" class="form-field input js-expand" onclick="jsExpand()"
+                                placeholder="Enter your email address" />
+                            <div class="js-hiddenform" id="js-form">
+                                <div class=" half-width">
+                                    <label class="label" htmlFor="first">
+                                        First Name
+                                    </label>
+                                    <input type="text" id="first" size="30" value="" placeholder="Firstname" class="form-field input" />
+                                </div>
+                                <div class="half-width">
+                                    <label class="label" htmlFor="last">
+                                        Last Name
+                                    </label>
+                                    <input type="text" id="last" size="30" placeholder="Surname" value="" class="form-field input" />
+                                </div>
+                                <div class="clear"></div>
+                                <label class="label" htmlFor="country">
+                                    Country
+                                </label>
+                                <Select id="country" options={options} placeholder="Country" class="form-field input" />
+                                <div class="half-width">
+                                    <label class="label" htmlFor="company">
+                                        Price
+                                    </label>
+                                    <input type="text" id="company" placeholder="Price" required="" value="" class="form-field input" />
+                                    
+                                        <label class="label" htmlFor="number">
+                                            Contact No.
+                                        </label>
+                                        <input type="text" id="number" placeholder="Contact No." required="" class="form-field input" maxLength="13" value="" />
+                                    
+                                    <div class="clear"></div>
+                                    <label class="label" htmlFor="comment">
+                                        Comment
+                                    </label>
+                                    <input type="text" id="comment" placeholder="Comment" class="form-field input" />
+                                    <div class="check-btn">
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="uxui"
+                                                value="uiux" />
+                                            <label for="uxui">UX-UI</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="apps"
+                                                value="mobile apps" />
+                                            <label for="apps">Mobile Apps</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="tech"
+                                                value="web tech" />
+                                            <label for="tech">Web Tech</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="seo" value="seo" />
+                                            <label for="seo">SEO</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="smm" value="smm" />
+                                            <label for="smm">SMM</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="branding"
+                                                value="branding" />
+                                            <label for="branding">Branding</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="webdesigning"
+                                                value="webdesigning" />
+                                            <label for="webdesigning">Web Designing</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="photoshop"
+                                                value="photoshop" />
+                                            <label for="photoshop">Photoshop</label>
+                                        </div>
+                                        <div class="form-group chbox">
+                                            <input type="checkbox" class="ckbox" name="service" id="other"
+                                                value="other" />
+                                            <label for="other">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="submit" class="btn btn-outline-warning box" type="submit" value="Send!">
+                                    Submit
+                                </button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="contact-img"
+                            style=" display: flex; flex: wrap; align-items:center; justify-content:center;">
+                            <Lottie class="contact-lottie" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <div class=" light text-light">
+                        <section class="container">
+                            <div class="contact">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/img/ICONMEDIA.gif" style=" height: 60px;" alt="icon" />
+                                        </td>
+                                        <td class="iconText footer">
+                                            We are a team of creatives who are
+                                            <br />
+                                            thrilled to create, ignite and succeed your
+                                            <br />
+                                            business with all the things digital.
+                                        </td>
+                                    </tr>
+                                    <tr class="footer textYellow">Email</tr>
+                                    <tr class="footer">priya@iconmediahouse.com</tr>
+                                    <tr class="footer textYellow">Contact</tr>
+                                    <tr>+1647-627-2546</tr>
+                                </table>
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li class=" footer heading txsi">Quick Links</li>
+                                        <li>About</li>
+                                        <li>Careers</li>
+                                        <li>Make Payment</li>
+                                        <li>Reach Us</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" copy-social-container ">
+                        <div class="footer container copy-social text-light">
+                            <small>
+                                {" "}
+                                &#169; 2021,Icon Media House. Made &#10084; with in Toronto.
+                            </small>
+                            <small class="text-end">
+                                <div>Follow us on:</div>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const form = document.querySelector('.js-hiddenform')
+
+        function jsExpand () {
+            console.log('expand')
+            form.classList.add('js-form')
+        }
+        
+    </script>
+</body>
+
+</html>

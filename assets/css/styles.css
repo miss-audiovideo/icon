@@ -145,10 +145,26 @@ body {
   margin-bottom: var(--mb-2);
 }
 
+.nav-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 45px;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: .75rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  padding: 0 1.5rem;
+  transition: 0.4s;
+}
 .nav__link,
 .nav__logo,
 .nav__toggle {
-  color: var(--text-color);
+  color: var(--primary-color);
   font-weight: var(--font-medium);
 }
 .nav__logo img {

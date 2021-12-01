@@ -124,13 +124,11 @@ body {
   background: transparent;
 }
 
-
-
 .nav__item {
   margin-bottom: var(--mb-2);
 }
 
-.nav-btn{
+.nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +138,7 @@ body {
   border-radius: 6px;
   background: transparent;
   color: var(--primary-color);
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: var(--font-medium);
   cursor: pointer;
   padding: 0 1.5rem;
@@ -187,7 +185,7 @@ body {
 
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 4rem 0 2rem;
+  /* padding: 4rem 0 2rem; */
 }
 
 .section-title,
@@ -495,12 +493,18 @@ body.dark-theme {
 
 .cards {
   display: grid;
+  /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
+@media screen and (min-device-width: 340px) and (max-device-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .cards img {
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .three-cards {
@@ -625,7 +629,7 @@ select.form-field {
   background: #fff url("https://www.kaptest.com/static/img/blue-down-arrow.png")
     no-repeat 98% center;
 }
-.contact-section{
+.contact-section {
   padding: 10% 0;
 }
 .center-block {
@@ -741,7 +745,8 @@ select.form-field {
   box-shadow: 0px 0px 10px #00000050, 0px 0px 20px #00000050;
   height: auto;
 }
-.three-sixty-text{text-align: center;
+.three-sixty-text {
+  text-align: center;
 }
 .btn-icon {
   position: absolute;
@@ -1069,6 +1074,28 @@ select.form-field {
   .D-right h3 {
     font-size: 50px;
     text-align: center;
+  }
+}
+@media screen and (min-device-width: 340px) and (max-device-width: 800px) {
+  .robo {
+    position: absolute;
+    top: 15vw;
+    left: -70vw;
+    width: 120vw;
+    height: auto;
+    transform: scaleX(-1) translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+@media screen and (min-device-width: 340px) and (max-device-width: 800px) {
+  .robo {
+    position: absolute;
+    top: 15vw;
+    left: -70vw;
+    width: 120vw;
+    height: auto;
+    transform: scaleX(-1) translate(-50%, -50%);
+    z-index: -1;
   }
 }
 @media screen and (min-device-width: 801px) and (max-device-width: 1026px) {

@@ -70,27 +70,6 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
-
-/*==================== Scroll sections active link ====================*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
 /*==================== Scroll Reveal Animation ====================*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -107,6 +86,8 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+// 360 VIDEO
 
 const tsText1 = document.getElementById('ts-Text-1')
 const video1 = document.querySelector('#video-1')
@@ -131,4 +112,3 @@ btn2.addEventListener('mouseout', () => {
     video2.play()
     tsText2.style.display = 'none'
 })
-

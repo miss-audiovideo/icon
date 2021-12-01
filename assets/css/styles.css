@@ -185,7 +185,7 @@ body {
 
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 4rem 0 2rem;
+  /* padding: 4rem 0 2rem; */
 }
 
 .section-title,
@@ -497,12 +497,18 @@ body.dark-theme {
 .cards {
   max-width: 1080px;
   display: grid;
+  /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
+@media screen and (min-device-width: 340px) and (max-device-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .cards img {
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .three-cards {
@@ -916,6 +922,9 @@ select.form-field {
   height: 40vw;
   position: relative;
 }
+.robo-set-2 blockquote:nth-child(2) {
+  padding: 10px 0;
+}
 .robo2 {
   position: absolute;
   right: 15vw;
@@ -1069,6 +1078,28 @@ select.form-field {
   .D-right h3 {
     font-size: 50px;
     text-align: center;
+  }
+}
+@media screen and (min-device-width: 340px) and (max-device-width: 800px) {
+  .robo {
+    position: absolute;
+    top: 15vw;
+    left: -70vw;
+    width: 120vw;
+    height: auto;
+    transform: scaleX(-1) translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+@media screen and (min-device-width: 340px) and (max-device-width: 800px) {
+  .robo {
+    position: absolute;
+    top: 15vw;
+    left: -70vw;
+    width: 120vw;
+    height: auto;
+    transform: scaleX(-1) translate(-50%, -50%);
+    z-index: -1;
   }
 }
 @media screen and (min-device-width: 801px) and (max-device-width: 1026px) {
@@ -1648,3 +1679,4 @@ select.form-field {
 .quote {
   text-align: center;
 }
+/* FIXME */

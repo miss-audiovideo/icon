@@ -703,6 +703,9 @@ body.dark-theme {
   height: 40vw;
   position: relative;
 }
+.robo-set-2 blockquote:nth-child(2) {
+  padding: 10px 0;
+}
 .robo2 {
   position: absolute;
   right: 15vw;
@@ -1435,3 +1438,4 @@ body.dark-theme {
 .quote {
   text-align: center;
 }
+/* FIXME */

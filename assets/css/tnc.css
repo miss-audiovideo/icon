@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: url("../img/leaf.gif");
+    background-size: 100% auto;
+    background-repeat: round;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+nav {
+    width: 95%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+nav ul li.nav__button {
+    color: #ffc857;
+    border: 2px solid;
+    border-radius: 0.25rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+}
+
+img { width: 140px; }
+
+main {
+    width: 90%;
+    margin: 8rem auto;
+}
+
+main header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main h1 {
+    color: #ffc857;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+main h2 {
+    color: #ffc857;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+
+main p {
+    margin: 2rem 0;
+}
+
+main header p span a {
+    color: #ffc857;
+    text-decoration: none;
+}
+
+main header p span a:hover {
+    color: #ffc857;
+}
+
+main header p span a:focus {
+    color: #ffc857;
+}
+
+footer {
+    margin: 0;
+    background-color: rgba(255,255,255,0.25);
+}
+
+.contact-links-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.contact-container {
+    width: 55%;
+}
+
+.quick-links {
+    width: 17.5%;
+}
+
+.instagram {
+    width: 17.5%;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+#about-us-logo {
+    display: block;
+    border-right: 1px solid #ffc857;
+    flex: 1;
+}
+
+#about-us-text {
+    padding-left: 1rem;
+    flex: 1;
+}
+#about-us-text span {
+    color: #ffc857;
+}
+
+.contact-info h3 {
+    color: #ffc857;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.contact-info p {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.quick-links h3 {
+    color: #ffc857;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.quick-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links-list li {
+    padding: 0.5rem;
+}
+
+.instagram {
+    color: #ffc857;
+    text-align: center;
+}
+
+.copyright-follow-container {
+    width: 100;
+    padding: 0 7.5%;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2b0505;
+}
+
+#follow-info {
+    font-size: 0.8rem;
+    color: #ffc857;
+
+}

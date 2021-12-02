@@ -536,8 +536,12 @@ body.dark-theme {
 }
 
 /* New */
-
+#cards {
+  display: flex;
+  justify-content: center;
+}
 .cards {
+  max-width: 1080px;
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

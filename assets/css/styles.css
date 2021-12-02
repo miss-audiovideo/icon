@@ -486,7 +486,7 @@ body.dark-theme {
 }
 
 .app__img {
-  width: 230px;
+  width: 175px;
   justify-self: center;
 }
 
@@ -549,14 +549,14 @@ body.dark-theme {
 /* New */
 .content {
   position: relative;
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
   margin: 0 auto;
 }
 .content video {
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-1 .content:nth-child(1):before {
@@ -568,8 +568,8 @@ body.dark-theme {
   height: 275px;
   width: 275px;
   background-image: url("../videos/main/1.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-1 .content:nth-child(2):before {
@@ -581,8 +581,8 @@ body.dark-theme {
   height: 275px;
   width: 275px;
   background-image: url("../videos/main/2.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-1 .content:nth-child(3):before {
@@ -593,8 +593,8 @@ body.dark-theme {
   height: 275px;
   width: 275px;
   background-image: url("../videos/main/3.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-2 .content:nth-child(1):before {
@@ -605,8 +605,8 @@ body.dark-theme {
   height: 275px;
   width: 275px;
   background-image: url("../videos/main/4.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-2 .content:nth-child(2):before {
@@ -617,8 +617,8 @@ body.dark-theme {
   height: 275px;
   width: 275px;
   background-image: url("../videos/main/5.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-3 .content:nth-child(1):before {
@@ -629,8 +629,8 @@ body.dark-theme {
   height: 275px;
   width: 275px;
   background-image: url("../videos/main/6.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
 
   border-radius: 12px;
 }
@@ -644,8 +644,8 @@ body.dark-theme {
   width: 275px;
 
   background-image: url("../videos/main/7.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .set-4 .content:nth-child(1):before {
@@ -658,8 +658,8 @@ body.dark-theme {
   width: 275px;
 
   background-image: url("../videos/main/8.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
 
   border-radius: 12px;
 }
@@ -673,8 +673,8 @@ body.dark-theme {
   width: 275px;
 
   background-image: url("../videos/main/9.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
 
   border-radius: 12px;
 }
@@ -688,8 +688,8 @@ body.dark-theme {
   width: 275px;
 
   background-image: url("../videos/main/10.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
 
   border-radius: 12px;
 }
@@ -703,8 +703,8 @@ body.dark-theme {
   width: 275px;
 
   background-image: url("../videos/main/11.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
 
   border-radius: 12px;
 }
@@ -718,16 +718,18 @@ body.dark-theme {
   width: 275px;
 
   background-image: url("../videos/main/12.jpg");
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
 
   border-radius: 12px;
 }
 
-/* #cards {
-  vertical-align: center;
-} */
+#cards {
+  display: flex;
+  justify-content: center;
+}
 .cards {
+  max-width: 1080px;
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -739,8 +741,8 @@ body.dark-theme {
   }
 }
 .cards img {
-  height: 230px;
-  width: 230px;
+  height: 175px;
+  width: 175px;
   border-radius: 12px;
 }
 .three-cards {

@@ -765,6 +765,15 @@ body.dark-theme {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 800px) and (max-width: 1080px) {
+  #cards {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .cards{
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
 .cards {
   max-width: 1080px;
   display: grid;

@@ -182,7 +182,18 @@ body {
 }
 
 /********************************** End Of Part 1 **************************************/
-
+.skf {
+  animation: crescando 1.5s alternate infinite ease-in-out;
+}
+@keyframes crescando {
+  0% {
+    transform: scale(0.8);
+    animation-delay: 2s;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*========== CLASS CSS ==========*/
 .ROBOT {
   width: 20vw;
@@ -549,114 +560,169 @@ body.dark-theme {
   border-radius: 12px;
 }
 .set-1 .content:nth-child(1):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/1.jpg');
+
+  background-image: url("../videos/main/1.jpg");
+  height: 275px;
+  width: 275px;
+  background-image: url("../videos/main/1.jpg");
   height: 230px;
   width: 230px;
   border-radius: 12px;
 }
 .set-1 .content:nth-child(2):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/2.jpg');
+
+  background-image: url("../videos/main/2.jpg");
+  height: 275px;
+  width: 275px;
+  background-image: url("../videos/main/2.jpg");
   height: 230px;
   width: 230px;
   border-radius: 12px;
 }
 .set-1 .content:nth-child(3):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/3.jpg');
+  background-image: url("../videos/main/3.jpg");
+  height: 275px;
+  width: 275px;
+  background-image: url("../videos/main/3.jpg");
   height: 230px;
   width: 230px;
   border-radius: 12px;
 }
 .set-2 .content:nth-child(1):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/4.jpg');
+  background-image: url("../videos/main/4.jpg");
+  height: 275px;
+  width: 275px;
+  background-image: url("../videos/main/4.jpg");
   height: 230px;
   width: 230px;
   border-radius: 12px;
 }
 .set-2 .content:nth-child(2):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/5.jpg');
+  background-image: url("../videos/main/5.jpg");
+  height: 275px;
+  width: 275px;
+  background-image: url("../videos/main/5.jpg");
   height: 230px;
   width: 230px;
   border-radius: 12px;
 }
 .set-3 .content:nth-child(1):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/6.jpg');
+  background-image: url("../videos/main/6.jpg");
+  height: 275px;
+  width: 275px;
+  background-image: url("../videos/main/6.jpg");
   height: 230px;
   width: 230px;
+
   border-radius: 12px;
 }
 .set-3 .content:nth-child(2):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/7.jpg');
+
+  background-image: url("../videos/main/7.jpg");
+  height: 275px;
+  width: 275px;
+
+  background-image: url("../videos/main/7.jpg");
   height: 230px;
   width: 230px;
   border-radius: 12px;
 }
 .set-4 .content:nth-child(1):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/8.jpg');
+
+  background-image: url("../videos/main/8.jpg");
+  height: 275px;
+  width: 275px;
+
+  background-image: url("../videos/main/8.jpg");
   height: 230px;
   width: 230px;
+
   border-radius: 12px;
 }
 .set-4 .content:nth-child(2):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/9.jpg');
+
+  background-image: url("../videos/main/9.jpg");
+  height: 275px;
+  width: 275px;
+
+  background-image: url("../videos/main/9.jpg");
   height: 230px;
   width: 230px;
+
   border-radius: 12px;
 }
 .set-5 .content:nth-child(1):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/10.jpg');
+
+  background-image: url("../videos/main/10.jpg");
+  height: 275px;
+  width: 275px;
+
+  background-image: url("../videos/main/10.jpg");
   height: 230px;
   width: 230px;
+
   border-radius: 12px;
 }
 .set-5 .content:nth-child(2):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/11.jpg');
+
+  background-image: url("../videos/main/11.jpg");
+  height: 275px;
+  width: 275px;
+
+  background-image: url("../videos/main/11.jpg");
   height: 230px;
   width: 230px;
+
   border-radius: 12px;
 }
 .set-5 .content:nth-child(3):before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
-  background-image: url('../videos/main/12.jpg');
+
+  background-image: url("../videos/main/12.jpg");
+  height: 275px;
+  width: 275px;
+
+  background-image: url("../videos/main/12.jpg");
   height: 230px;
   width: 230px;
+
   border-radius: 12px;
 }
-
 
 /* #cards {
   vertical-align: center;
@@ -1099,6 +1165,36 @@ select.form-field {
   height: auto;
 }
 .sticky {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.sticky-left {
+  margin: auto;
+  flex: 0.6;
+}
+.sticky-left h1 {
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  color: #ca943a;
+}
+.sticky-left h3 {
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+}
+.sticky-right {
+  margin: auto;
+  flex: 0.4;
+}
+.sticky-right img {
+  width: 45vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+/* .sticky {
   padding: 3rem;
   position: relative;
   box-sizing: border-box;
@@ -1137,7 +1233,7 @@ select.form-field {
   font-size: 73px;
   left: 10vw;
   position: absolute;
-}
+} */
 
 /* Design */
 .D-container {

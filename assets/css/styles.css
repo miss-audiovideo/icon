@@ -182,18 +182,54 @@ body {
 }
 
 /********************************** End Of Part 1 **************************************/
-.skf {
-  animation: crescando 1.5s alternate infinite ease-in-out;
+/* .skf {
+  -webkit-animation: mover 1s alternate infinite ease-in-out;
+  animation: 1s alternate infinite ease-in-out;
 }
-@keyframes crescando {
+@keyframes mover {
   0% {
-    transform: scale(0.8);
+    transform: translateY(0);
     animation-delay: 2s;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(-10px);
   }
 }
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+    animation-delay: 2s;
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+} */
+
+.skf {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
 /*========== CLASS CSS ==========*/
 .ROBOT {
   width: 20vw;
@@ -227,7 +263,7 @@ body {
 }
 @media screen and (min-device-width: 370px) and (max-device-width: 414px) {
   .ROBOT {
-    margin-left: 63%;
+    margin-left: 60%;
     z-index: -1;
   }
   .home__data h1 {
@@ -236,8 +272,9 @@ body {
 }
 @media screen and (min-device-width: 415px) and (max-device-width: 604px) {
   .ROBOT {
-    margin-left: 63%;
+    margin-left: 70%;
     z-index: -1;
+    margin-top: 25%;
   }
 }
 
@@ -923,7 +960,6 @@ select.form-field {
   position: relative;
   cursor: pointer;
   text-align: center;
-  /* font-family: "bold"; */
   text-transform: uppercase;
   font-size: 16px;
   padding: 2px 30px;
@@ -1170,6 +1206,7 @@ select.form-field {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  text-transform: uppercase;
 }
 .sticky-left {
   margin: auto;
@@ -1180,11 +1217,13 @@ select.form-field {
   display: flex;
   justify-content: center;
   color: #ca943a;
+  font-family: futuramedium;
 }
 .sticky-left h3 {
   font-size: 3vw;
   display: flex;
   justify-content: center;
+  font-family: futurabook;
 }
 .sticky-right {
   margin: auto;

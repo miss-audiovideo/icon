@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #ffc857;
+  --primary-color-alt: #ffc857;
+  --title-color: #ffc857;
+  --text-color: #ffffff;
+  --text-color-light: #a6a6a6;
+  --body-color: #2b0505;
+  --container-color: #2b0505;
+}
 
 html {
     font-size: 100%;
@@ -12,12 +21,23 @@ html {
 
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     background: url("../img/leaf.gif");
     background-size: 100% auto;
     background-repeat: round;
     background-attachment: fixed;
-    color: white;
+    color: var(--text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ul>li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 header {
@@ -30,21 +50,29 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li.nav__button {
-    color: #ffc857;
-    border: 2px solid;
-    border-radius: 0.25rem;
+.nav__link {
+    display: block;
     padding: 0.75rem 2rem;
-    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    color: var(--title-color);
+}
+
+.nav__link:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    color: yellow;
 }
 
 img { width: 140px; }
@@ -60,17 +88,18 @@ main header {
 }
 
 main h1 {
-    color: #ffc857;
+    color: var(--title-color);
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 4rem;
 }
 
 main h2 {
-    color: #ffc857;
+    color: var(--title-color);
     font-size: 1rem;
     text-transform: uppercase;
     margin-top: 4rem;
+    font-weight: normal;
 }
 
 main p {
@@ -78,16 +107,16 @@ main p {
 }
 
 main header p span a {
-    color: #ffc857;
+    color: var(--title-color);
     text-decoration: none;
 }
 
 main header p span a:hover {
-    color: #ffc857;
+    color: var(--title-color);
 }
 
 main header p span a:focus {
-    color: #ffc857;
+    color: var(--title-color);
 }
 
 footer {
@@ -95,98 +124,161 @@ footer {
     background-color: rgba(255,255,255,0.25);
 }
 
-.contact-links-container {
-    width: 85%;
+/* ======= MOBILE VIEW ================ */
+.logo-info {
+    width: 60vw;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
 }
 
-.contact-container {
-    width: 55%;
-}
-
-.quick-links {
-    width: 17.5%;
-}
-
-.instagram {
-    width: 17.5%;
-}
-
-.about-us {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
-}
-
-#about-us-logo {
+.logo-info > img {
     display: block;
-    border-right: 1px solid #ffc857;
-    flex: 1;
+    margin: 0 auto;
 }
 
-#about-us-text {
-    padding-left: 1rem;
-    flex: 1;
-}
-#about-us-text span {
-    color: #ffc857;
+.info {
+    width: 60vw;
+    margin: 1rem auto;
 }
 
-.contact-info h3 {
-    color: #ffc857;
-    font-size: 0.8rem;
-    margin-bottom: 0;
+.about-us-text span {
+    color: var(--primary-color);
 }
 
-.contact-info p {
-    margin-top: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.quick-links h3 {
-    color: #ffc857;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid gray;
-}
-
-.quick-links-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.quick-links-list li {
-    padding: 0.5rem;
-}
-
-.instagram {
-    color: #ffc857;
+.footer-col p {
     text-align: center;
 }
 
-.copyright-follow-container {
-    width: 100;
-    padding: 0 7.5%;
-    font-size: 0.75rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2b0505;
+.info p {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+.footer-col h3, .footer-col-main h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    text-align: center;
 }
 
-#follow-info {
-    font-size: 0.8rem;
-    color: #ffc857;
+.footer-col {
+    margin: 1rem auto;
+}
+.quick-links-list {
+    text-align: center;
+}
 
+.socials-container {
+    width: 100vw;
+    background-color: var(--container-color);
+    padding: 0.5rem 3rem 0.5rem;
+    text-align: center;
+}
+
+i {
+    padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin: auto;
+        padding: 4rem 0 2rem;
+        border-top: 2px outset rgba(255,255,255,0.25);
+        width: 100vw;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer-col-main {
+        width: 50%;
+        padding: 0 5% 0 5%;
+    }
+    
+    .footer-col {
+        width: 25%;
+        padding: 0 5% 0 0;
+    }
+    
+    .footer-col h3, .footer-col-main h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 0;
+        color: var(--primary-color);
+        text-transform: capitalize;
+    }
+    
+    .footer-col h3 {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid gray;
+    }
+    
+    .logo-info {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .about-us-logo {
+        width: 50%;
+        padding-right: 0.5rem;
+        border-right: 1px solid var(--primary-color);
+    }
+    
+    .about-us-text {
+        width: 50%;
+        padding-left: 1rem;
+    }
+    
+    .about-us-text span {
+        color: var(--primary-color);
+    }
+    
+    .info {
+        width: 100%;
+        text-align: left;
+    }
+    .info > p {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.5rem;
+    }
+    
+    .quick-links-list {
+        padding-top: 0.5rem;
+    }
+    .quick-links-list li {
+        padding: 0.5rem 0;
+    }
+    
+    .insta-window {
+        display: block;
+        width: 100%;
+        height: 50%;
+        background-color: white;
+    }
+    
+    .socials-container {
+        width: 100vw;
+        line-height: 1.5rem;
+        padding: 0 7.5%;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #2b0505;
+    }
+    
+    .social-links {
+        font-size: 0.8rem;
+        color: var(--title-color);
+    }
+    
+    i {
+        padding: 0 0.5rem;
+    }
 }

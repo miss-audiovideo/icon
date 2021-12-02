@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #ffc857;
+  --primary-color-alt: #ffc857;
+  --title-color: #ffc857;
+  --text-color: #ffffff;
+  --text-color-light: #a6a6a6;
+  --body-color: #2b0505;
+  --container-color: #2b0505;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url("../img/leaf.gif");
+    background-size: 100% auto;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li img {
+    width: 140px;
+}

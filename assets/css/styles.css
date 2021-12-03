@@ -94,13 +94,14 @@ img {
 }
 
 body {
+  position: static;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
   background: url("../img/leaf.gif");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  background-size: 100% auto;
+  background-repeat: round;
   background-attachment: fixed;
-
   color: var(--text-color);
   line-height: 1.6;
 }

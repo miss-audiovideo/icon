@@ -97,8 +97,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--small-font-size);
   background: url("../img/leaf.gif");
-  background-size: 100% auto;
-  background-repeat: round;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
   color: var(--text-color);

@@ -4,21 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================BOX ICONS=========================-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="./assets/css/about-us.css">
     <title>About us</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="header">
-                <li><img src="./assets/img/dark-bg-logo.png" alt=""></li>
-                <li class="nav__link"><button class=""><a href="./contact.html">Get in touch</a></button></li>
-            </ul>
+    <header class="l-header" id="header">
+        <nav class="nav">
+            <div class="nav-top">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__logo"><img src="./assets/img/dark-bg-logo.png" alt=""></a></li>
+                    <li class="nav__item"><button class="nav-btn"><a class="nav__link" href="./contact.html">Get in touch</a></button></li>
+                </ul>
+            </div>
+            <div class="site-map">
+                <p id="site-map"><a class="home__link" href="./index.html">Home</a> / <span class="current__page">Pricing</span></p>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="main-heading-container">
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home__title">
+                <div>We have</div>
+                <div class="history">history</div>
+            </div>
+            <div class="subheading">
+                <div class="home__subtitle subtitle-1">We Are Based in Toronto</div>
+                <div class="home__subtitle subtitle-2">But our team is <span class="cosmo">truly cosmopolitan</span></div>
+            </div>
+        </section>
+
+        <section class="team-qualities">
+            <div class="line1">Our team is small but highly passionate and talented.</div>
+            <div class="line2">Because,</div>
+            <div class="line3"><span class="quality-quantity">Quality</span> > <span class="quality-quantity">Quantity.</span></div>
+        </section>
+        <!-- <div class="main-heading-container">
             <h1>We have <span class="yellow-text history-text">history</span></h1>
             <p class="capitalized">We are based in Toronto</p>
             <p class="all-caps">but our team is <span class="yellow-text">truly cosmopolitan</span></p>
@@ -27,12 +53,13 @@
         <div class="team-qualities-container">
             <p class="all-caps">Our team is small but highly passionate and talented.</p>
             <p class="capitalized">Because, <span class="yellow-text">quality</span> > <span class="yellow-text">quantity</span></p>
-        </div>
+        </div> -->
+
         <div class="our-team-container">
-            <h2>All star team</h2>
+            <h2>All-star team</h2>
             <div class="members-container">
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Chithra Priya.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">Chithra Priya</h2>
                         <p class="member-designation">Creative director</p>
@@ -41,7 +68,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Laura Sturk.gif" alt="Laura Stark"></p>
                     <div class="member-details">
                         <h2 class="member-name">Laura Sturk</h2>
                         <p class="member-designation">Account manager</p>
@@ -50,7 +77,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Vijay.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">Vijay Gupta</h2>
                         <p class="member-designation">Graphic designer</p>
@@ -59,7 +86,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/DV Ram.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">DV Ram</h2>
                         <p class="member-designation">VFX artist</p>
@@ -68,7 +95,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Joan Rusnell.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">Joan Russell</h2>
                         <p class="member-designation">3D modeller</p>
@@ -77,7 +104,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Swati.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">Swati Mandal</h2>
                         <p class="member-designation">Web Developer</p>
@@ -86,7 +113,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Stephanie Gonzales.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">Stephanie Gonzales</h2>
                         <p class="member-designation">Content manager</p>
@@ -95,7 +122,7 @@
                     </div>
                 </div>
                 <div class="member">
-                    <p><img src="#" alt=""></p>
+                    <p><img class="member-avatar" src="./assets/img/Ajay Raj.gif" alt=""></p>
                     <div class="member-details">
                         <h2 class="member-name">Nikhil Jones</h2>
                         <p class="member-designation">Social media manager</p>

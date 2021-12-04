@@ -20,6 +20,10 @@
   font-family: cinzeldecorativebold;
   src: url("../fonts/CinzelDecorative-Bold.ttf");
 }
+@font-face {
+  font-family: herculesitalic;
+  src: url("../fonts/Hercules\ Text\ Italic.ttf");
+}
 /*========== BASE CSS Styles ==========*/
 *,
 ::before,
@@ -233,12 +237,13 @@ img.vert-move {
 
 /*========== CLASS CSS ==========*/
 .ROBOT {
-  width: 20vw;
+  width: 50vw;
   height: auto;
-  margin-top: -20% !important;
-  margin-left: 20px;
+  transform: rotateY(180deg);
   z-index: -100;
-  animation: crescando 1.5s alternate infinite ease-in-out;
+  transform: translate(-30%,-50%);
+
+
 }
 
 @keyframes crescando {
@@ -316,6 +321,7 @@ img.vert-move {
   font-size: var(--h1-font-size);
   color: var(--primary-color);
   margin-bottom: var(--mb-1);
+  text-shadow: 0px -6px 4px rgba(255,200,87,1);
 }
 
 .home__subtitle {

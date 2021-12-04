@@ -1,6 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: futuramedium;
+  src: url("../fonts/Futura-Medium.ttf");
+}
+@font-face {
+  font-family: futurabook;
+  src: url("../fonts/Futura-Book.ttf");
+}
+@font-face {
+  font-family: futurameditalic;
+  src: url("../fonts/Futura-Medium-Italic.ttf");
+}
+@font-face {
+  font-family: cinzelbold;
+  src: url("../fonts/Cinzel-Bold.ttf");
+}
+@font-face {
+  font-family: cinzeldecorativebold;
+  src: url("../fonts/CinzelDecorative-Bold.ttf");
+}
+@font-face {
+  font-family: herculesitalic;
+  src: url("../fonts/Hercules\ Text\ Italic.otf");
+}
+/*========== BASE CSS Styles ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /* max-width: 100%; */
+  height: auto;
+}
+
+/*===== VARIABLES CSS =====*/
 :root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
   --primary-color: #ffc857;
   --primary-color-alt: #ffc857;
   --title-color: #ffc857;
@@ -8,36 +70,265 @@
   --text-color-light: #a6a6a6;
   --body-color: #2b0505;
   --container-color: #2b0505;
-}
 
-html {
-    font-size: 100%;
-    box-sizing: border-box;
+  /*========== Font and typography ==========*/
+  --body-font: "Sora", sans-serif;
+  --large-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.638rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margins ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*========== z-index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    background: url("../img/leaf.gif");
-    background-size: 100% auto;
-    background-repeat: round;
-    background-attachment: fixed;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  background: url("../img/leaf.gif");
+  background-size: 100% auto;
+  background-repeat: round;
+  background-attachment: fixed;
+
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+.l-header {
+  width: 95%;
+  margin: 3rem auto;
 }
 
-nav ul li {
-    margin: 0;
-    padding: 0;
+.nav__list {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul li img {
-    width: 140px;
+.nav__item {
+  margin-bottom: var(--mb-2);
+}
+
+.nav__logo img {
+  width: 150px;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border: 2px solid;
+  color: var(--primary-color);
+  border-radius: 6px;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  padding: 0 1.5rem;
+  transition: 0.4s;
+}
+
+.nav__link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.site-map {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 0 0 0;
+}
+
+.l-main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.home__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.current__page {
+  color: var(--primary-color);
+}
+
+.history-heading {
+  text-align: center;
+}
+
+.home {
+  margin-bottom: 5rem;
+}
+.home__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: futuramedium;
+  /* background-color: red; */
+  padding: 0 0 1rem 0;
+  border-bottom: 2px solid gray;
+  width: fit-content;
+  margin: 4rem auto 2rem;
+}
+
+.history {
+  color: var(--primary-color);
+  font-family: cinzelbold;
+  font-size: 2.25rem;
+  padding: 0 0 0 0.6rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-family: sans-serif;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle-1 {
+  font-family: herculesitalic;
+}
+
+.subtitle-2 {
+  font-family: futuramedium;
+  text-transform: uppercase;
+}
+
+.cosmo {
+  color: var(--primary-color);
+}
+
+.team-qualities {
+  text-align: center;
+  width: fit-content;
+  margin: 8rem auto;
+}
+
+.line1 {
+  font-size: 1rem;
+  font-family: futuramedium;
+  text-transform: uppercase;
+}
+
+.line2, .line3 {
+  font-size: 1.25rem;
+  font-family: herculesitalic;
+}
+
+.line3 {
+  font-size: 1.75rem;
+}
+
+.quality-quantity {
+  color: var(--primary-color);
+}
+
+.our-team-container {
+  text-align: center;
+  margin: 8rem auto 0;
+}
+
+.our-team-container>h2 {
+  font-size: 2rem;
+  font-family: futuramedium, sans-serif;
+  text-transform: uppercase;
+  color: #eee;
+}
+.member {
+  margin: 3rem 0.5rem;
+}
+
+.member-avatar {
+  max-width: 100%;
+  border: 0.5rem solid rgba(255,255,255,0.25);
+  border-radius: 2rem;
+}
+
+.member-details {
+  background: rgba(255,255,255,0.25);
+  border-radius: 2rem;
+  border: 5px outset rgba(255,255,255,0.25);
+  padding: 1rem;
+  height: 20rem;
+}
+
+.member-name {
+  color: var(--primary-color);
+  font-family: futurabook;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.member-designation {
+  text-transform: uppercase;
+  font-family: futurabook;
+  font-size: var(--small-font-size);
+  letter-spacing: 0.15rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid gray;
+}
+
+.member-alias {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  font-family: herculesitalic, sans-serif;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.member-info {
+  font-size: 1rem;
+  color: #eee;
+  font-family: futurabook, sans-serif;
+  margin-top: 1rem;
+  line-height: 1.25rem;
+}
+
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+}
+
+@media screen and (min-width: 60em) {
+  .home__title {
+    font-size: 2.5rem;
+  }
+  .history {
+    font-size: 4.5rem;
+  }
+  .subheading {
+    font-size: 2rem;
+  }
+  .line1 {
+    font-size: 2rem;
+  }
+  .line2 {
+    font-size: 2.5rem;
+  }
+  .line3 {
+    font-size: 3.5rem;
+  }
 }

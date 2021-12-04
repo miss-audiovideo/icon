@@ -123,19 +123,35 @@ btn2.addEventListener("mouseout", () => {
   tsText2.style.display = "none";
 });
 
+var figure = $(".content");
+var vid = figure.find("video");
+
+[].forEach.call(figure, function (item,index) {
+    item.addEventListener('mouseover', hoverVideo.bind(item,index), false);
+    item.addEventListener('mouseout', hideVideo.bind(item,index), false);
+});
+
+function hoverVideo(index, e) {
+    vid[index].play(); 
+}
+
+function hideVideo(index, e) {
+    vid[index].load(); 
+}
+
 // VIDEO Overlay
 // 1
-const videoOverlay = document.querySelectorAll(".content");
-const video = document.querySelectorAll("#player");
+// const videoOverlay = document.querySelectorAll(".content");
+// const video = document.querySelectorAll("#player");
 
-videoOverlay.forEach((v) => {
-  v.addEventListener("mouseenter", () => {
-    v.classList.remove("content");
-    video[v.dataset.id - 1].play();
-  });
-  v.addEventListener("mouseleave", () => {
-      video[v.dataset.id - 1].pause();
-      video[v.dataset.id - 1].load();
-    v.classList.add("content");
-  });
-});
+// videoOverlay.forEach((v) => {
+//   v.addEventListener("mouseenter", () => {
+//     v.classList.remove("content");
+//     video[v.dataset.id - 1].play();
+//   });
+//   v.addEventListener("mouseleave", () => {
+//       video[v.dataset.id - 1].pause();
+//       video[v.dataset.id - 1].load();
+//     v.classList.add("content");
+//   });
+// });

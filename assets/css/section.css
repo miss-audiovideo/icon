@@ -1,0 +1,50 @@
+.lux{
+    font-size: 5.5vw;
+    font-family: "cinzeldecorativebold";
+    text-shadow: 0px 0px 13px #eaeaf025;
+    color: #eaeaf0;
+}
+.text{
+    padding: 30px;
+    text-align: right;
+}
+.spn{
+    color:  #ffc857;
+}
+h5 .spn{
+    font-size: 2rem;
+    font-family:  Courier;
+}
+.crd{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.text p{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.box{
+    margin-left: 100px;
+    height: 300px;
+    width: 400px;
+    border: 1px solid gray;
+}
+.box1{
+        margin-left: 80px;
+        height: 300px;
+        width: 400px;
+        border: 1px solid gray;
+}
+.mg{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.h5 span{
+    padding-top: 10px;
+    color: #ffc857;
+    font-size: 1.5rem;
+    font-family:Courier, monospace;
+}
+.h6{
+    padding-top: 50px;
+}

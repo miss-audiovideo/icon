@@ -162,6 +162,22 @@ body {
   color: var(--primary-color);
 }
 
+
+
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+  text-align: center;
+ color: #ccc;
+  border: 1px solid #ddd;
+}
 /* Show menu */
 .show-menu {
   top: var(--header-height);
@@ -598,8 +614,14 @@ body.dark-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
-
+#cards{
+  margin-top: 150px;
+}
+.bd-container{
+margin-bottom: 50px;
+}
 .mid-col-odd, .mid-col-even, .first-last-col {
   width: 18%;
   display: flex;
@@ -825,8 +847,30 @@ select.form-field {
 
 /* 360 */
 
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.first-column {
+    background: green;
+    color: white;
+    font-size: 2rem;
+    border-width:2px;
+    border-color:#000;  
+    background: #5851ff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    align-items: center;
+
+}
+.second-column {
+
+  border-style: dotted;
+  border-width: 2px;
+}
+
 .three-sixty-section {
-  padding: 0% 10%;
+  padding: 0% 0%;
   margin: auto 0;
   position: relative;
 }
@@ -1008,6 +1052,7 @@ select.form-field {
   margin-bottom: 10%;
   padding: 10% 10%;
   height: 40vw;
+  visibility: hidden;
   position: relative;
 }
 .robo-set-2 blockquote:nth-child(2) {
@@ -1113,6 +1158,7 @@ select.form-field {
   text-align: left;
   font-family: futurabook;
   line-height: 4.5vw;
+  display: none;
 }
 .D-right h1 {
   color: #e3c257;

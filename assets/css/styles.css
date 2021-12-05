@@ -620,6 +620,9 @@ body.dark-theme {
 }
 
 /* On hover video gallery */
+#cards {
+  padding: 0 1rem;
+}
 .cards {
   height: 55vw;
   display: flex;
@@ -652,6 +655,7 @@ margin-bottom: 50px;
 .content {
   margin: 1rem 0;
 }
+
 /* Contact */
 .contact {
   display: flex;

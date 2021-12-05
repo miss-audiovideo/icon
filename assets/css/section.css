@@ -5,7 +5,9 @@
     color: #eaeaf0;
 }
 .text{
-    padding: 30px;
+    margin: 0 30px;
+    height: 100vh;
+    padding: 10rem 0;
     text-align: right;
 }
 .spn{
@@ -13,11 +15,12 @@
 }
 h5 .spn{
     font-size: 2rem;
-    font-family:  Courier;
+    font-family: Courier;
 }
 .crd{
-    padding-top: 150px;
-    padding-bottom: 150px;
+    margin: 0 30px;
+    height: 100vh;
+    padding: 10rem;
 }
 .text p{
     font-weight: 500;

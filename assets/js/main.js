@@ -91,7 +91,7 @@ sr.reveal(
             .services__content, .menu__content,
             .app__data, .app__img,
             .contact__data, .contact__button,
-            .footer__content, .cards`,
+            .footer__content, .cards, .text, .crd`,
   {
     interval: 200,
   }

@@ -104,18 +104,29 @@
           flex-direction: column-reverse;
           display: flex;
         }
+        .crd1{
+          margin: auto;
+          flex-direction: column;
+          display: flex;
+        }
       .box {
         margin-left: -100px;
         height: 232px;
-        width: 300px;
+        width: 260px;
         border: 1px solid gray;
     }
     .box1 {
+      padding: 80px;
+      margin-left: -100px;
       height: 232px;
-      width: 300px;
+      width: 260px;
       border: 1px solid gray;
   }
     .crd p{
+      margin-left: -120px;
+      width: 444px;
+    }
+    .crd1 .mg{
       margin-left: -100px;
       width: 444px;
     }

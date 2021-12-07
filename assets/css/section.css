@@ -10,6 +10,35 @@
     padding: 10rem 0;
     text-align: right;
 }
+/* .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .first-column {
+      background: none;
+      color: white;
+      font-size: 2rem; 
+      background: none;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      align-items: center;
+  
+  }
+body {
+    padding-top: 40px;
+  }
+  .p {
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+  .p a {
+    text-decoration: underline;
+    color: blue;
+  } */
+  .img{
+      object-fit: contain;
+      width: 300px;
+  }
 .spn{
     color:  #ffc857;
 }
@@ -17,33 +46,9 @@ h5 .spn{
     font-size: 2rem;
     font-family: Courier;
 }
-.crd{
-    display: flex;
-    margin: 0 30px;
-    height: 100vh;
-    padding: 10rem;
-}
-.crd1{
-    display: flex;
-    height: 100vh;
-    padding: 10rem;
-}
-.text p{
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-.box{
-    margin-left: 100px;
-    height: 300px;
-    width: 400px;
-    border: 1px solid gray;
-}
-.box1{
-        margin-left: 80px;
-        height: 300px;
-        width: 400px;
-        border: 1px solid gray;
-}
+/* .pad{
+   margin: 200px 150px;
+} */
 .mg{
     margin-top: 20px;
     margin-left: 80px;

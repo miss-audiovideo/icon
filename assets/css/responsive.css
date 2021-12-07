@@ -104,6 +104,13 @@
           flex-direction: column-reverse;
           display: flex;
         }
+        .slider{
+          width: 132%;
+        }
+        .footer__container {
+          padding-left: 5px;
+          width: 132%;
+        }
         .crd1{
           margin: auto;
           flex-direction: column;
